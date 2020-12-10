@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* Root */
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: 'Montserrat', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+
+.bg {
+  background: url('../img/samsung-memory-y3fYJWsgQt8-unsplash.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: calc(100vw + 60px);
+  height: calc(100vh + 60px);
+  z-index: -1;
+  filter: blur(0px);
+}
+
+.bg-text {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+  padding: 400px;
+  text-align: center;
+}
+
+.bg-text h1 {
+  font-size: 2rem;
+  font-weight: lighter;
+}
+
+.loading-text {
+  font-size: 50px;
+  color: #fff;
+}
+
+.btn {
+  display: inline-block;
+  background: #c6dcde;
+  font-size: 18px;
+  color: #fff;
+  padding: 13px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Media Querie */
+@media(max-width: 800px) {
+  .bg {
+    width: 100%;
+  }
+  .bg-text {
+    padding: 40px;
+  }
+}
